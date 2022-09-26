@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <p>ユーザ作成が完了しました。以下よりログインしてください。</p>
+        <a href="{% url 'account:signup' %}" class="btn btn-secondary">ログイン</a>
+    </div>
+</div>
+{% endblock %}

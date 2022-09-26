@@ -1,0 +1,8 @@
+{{ user.name }} 様 
+
+下記URLよりサイトにアクセスの上、パスワードのリセットをお願いいたします。
+リセット可能な期限は24時間なのでご注意下さい。
+
+パスワードリセットURL
+{{ protocol}}://{{ domain }}{% url 'account:fgpass_update' token=token %}
+
